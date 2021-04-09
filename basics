@@ -1,0 +1,216 @@
+// basics of java script 
+// commenting
+alert("Hello_world") it is done by using two forward slashes
+
+
+
+// data types
+// variables
+// variables are box tht are used to store a value let be any of 7 data types
+// variables can be called by 3 ways
+var myName = "shaam"
+// var will remain same over entire programming , also it can be changed.
+let herName = "SSS"
+ // the sad thing abt let is it can't be changed and it is only in a place where it is generated
+const pi = 3.14
+// even constant can't be changed once intiated its done
+
+
+
+// declaring and assigning variables
+// declaring a variable 
+var a;
+// assigning a variable
+console.log(a)
+var b = 190;
+// tht is we will assign using an assignment operator
+a = 7;
+a = b;
+console.log(a)
+
+
+
+//camel casing 
+var shaamNatheshwar = 18;
+console.log(ShaamNatheshwar) //this is wrong coz case sensitivity.
+
+
+
+/* basic arithmetic operators in javascript */
+/* add */
+var sum = 100 + 20;
+console.log(sum)
+/* subract */
+var sub = 100 - 20;
+console.log(sub);
+/* multiply */
+var mul = 100*2;
+console.log(mul);
+/* divide */
+var div = 100/10;
+console.log(div);
+
+
+
+/* incrementing a number */
+var myVar = 99;
+myVar++;
+console.log(myVar);
+/* decrenenting a number */
+var myTar = 99;
+myVar--;
+console.log(myTar);
+
+
+
+/* decimal numbers
+javascript also uses decimal number */
+mySar = 0.008;
+console.log(mySar);
+// same multiplication and divison rules are applied to decimals
+
+
+
+//easier number add on
+var a = 3;
+var b = 2;
+var c = 2;
+a += 12;
+b += 10;
+c += 5;
+console.log(a,b,c)
+// same steps can be followed for division sub mul make sure tht we use the assign operator in the last
+
+
+
+/* strings */
+var myName = "Shaam"
+var myName2 = "Nath"
+console.log(myName)
+
+
+
+/* ignoring nested double quotes */
+var harry = "The death spell is \"Avarakedavra\"it is deadly"
+console.log(harry)
+/* in this case use backslash to get rid of nested quotes */
+/* use either single quotes or even back quotes if u feel this method is difficult */
+
+
+
+/* concatenation */
+var myName = "shaam"+" natheshwar";
+console.log(myName)
+
+
+
+/* concatenation */
+var myName = "shaam"+" natheshwar";
+myName += "my name is this";
+console.log(myName)
+
+
+
+/* finding length of string */
+var myName = "shaamNatheshwar";
+console.log(myName.length)
+
+
+
+/* index in    here the indexing is done using square brackets
+also indices start from o which is called zero based indexing */
+var myName = "shaamNatheshwar";
+console.log(myName[0])
+console.log(myName[1])
+console.log(myName[2])
+console.log(myName[3])
+console.log(myName[4])
+
+
+//strings are always immutable
+var myName = "jhaam natheshwar";
+//we cant directly chnge by indexing so we can change the entire stuff
+myName = "shaam natheshwar";
+
+
+
+ /* arrays are used to store a data */
+var myArr = ["shaam",7]
+//they always use a square bracket which is followed by a comma
+
+
+
+//array inside another array is a nested array
+var myNr = [["shaam",18],["virat",31]];
+
+
+
+/* indexing of arrays */
+var myArray = [1,2,3,4]
+console.log(myArray[0])
+console.log(myArray[1])
+console.log(myArray[2])
+console.log(myArray[3])
+
+
+/* strings are immutable whereas arrays aren't  they can be changed*/
+var myNa = [1,2,3,4];
+myNa[0] = 99;
+console.log(myNa)
+
+
+
+/* accessing multiple array use multiple indices */
+var myArr = [[1,2,3],[4,5,6],[7,8,9]];
+console.log(myArr[2][0]);
+
+
+
+/* use push attribute to push stuffs at the end
+ */var myVar = [1,2,3];
+myVar.push(["shaam","shazam"]);
+console.log(myVar)
+
+
+
+/* use pop attribute to remove stuffs at the end
+ */var myVar = [1,2,3];
+myVar.pop()
+console.log(myVar)
+
+
+
+/* use shift attribute to remove first stuff*/
+var myVar = [1,2,3];
+myVar.shift();
+console.log(myVar)
+
+
+
+/* use unshift attribute to adds to the first stuff*/
+var myVar = [1,2,3];
+myVar.unshift(["shaam"]);
+console.log(myVar)
+
+
+
+/* functions are really important like other programming language they need to be called for there proper functioning */
+
+function first(){
+	console.log("hello,world");
+}
+first()
+
+/* the things to remember in a function is tht first use function attribute then the
+string and in bracket write stuffs to be invoked then open parenthesos write the stuffs u wanna execute then callem */
+
+
+
+//functions with operations
+function myFirst(a,b){
+	console.log(a-b);
+}
+myFirst(100,99)
+
+//u can use any argument inside the bracket make sure tht we call em
+another important thing to be noticed is var above a function is termed as a global also if u wanna make any function globall just dont contain it in a var
