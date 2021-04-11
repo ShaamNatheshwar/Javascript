@@ -214,3 +214,210 @@ myFirst(100,99)
 
 //u can use any argument inside the bracket make sure tht we call em
 another important thing to be noticed is var above a function is termed as a global also if u wanna make any function globall just dont contain it in a var
+
+
+
+//global and local variable more intuition
+/* local variable always takes over global variable */
+var myD = "shirt";
+function myS (){
+	var myD = "pant";
+  return myD
+}
+console.log(myS()) /* use brackets insife too */
+console.log(myD)
+
+
+
+/* returning */
+function myNum(num){
+	return num-7;
+}
+console.log(myNum(10))
+/* what happens without return we will get an undefined */
+
+
+
+/* assigning a variable using a function */
+var myVal = 5;
+function myNum(num){
+	return num+5
+}
+myVal = myNum(5);
+
+
+
+/* booleans helps in givng true or false in other words they act like switches */
+function isit(shaam) {
+	if (shaam) {
+  return "yes it is shaam";
+  }
+  return "some random guy";
+}
+console.log(isit(true))
+
+
+
+/* These if plays an important role in comparison problems and other stuffs */
+function myNum(num){
+	if(num == 10) {
+  return "It is equal";
+  }
+  return "oops it ain't";
+}
+console.log(myNum(22));
+
+
+
+/* things to know abt equality and strictly equality is tht == doesn't care whether its a string or not whereas strictly equal cares those stuffs  */
+function myNum(num){
+	if(num === 10) {
+  return "It is equal";
+  }
+  return "oops it ain't";
+}
+console.log(myNum(10));
+
+
+
+/* same rule for strict none equaluty and non equality operator */
+function myNum(num){
+	if(num != 10) {
+  return "It is equal";
+  }
+  return "oops it ain't";
+}
+console.log(myNum(10));
+
+
+
+/* comparing using arithmetic stuffs */
+function myNum(num){
+	if (num>10){
+  return "its grt";
+  }
+  return "nopies";
+}
+console.log(myNum(11));
+//same for greater than and less than
+
+
+//combining logical and arithmetic operator
+function myNum(num){
+	if (num<=50 && num>=25) {
+  return "he is passed"
+  }
+  return "u have failed"
+}
+console.log(myNum(33))
+//use || for or incase of if we want
+
+
+
+//else statement is an another operator which is used in comparison like tht of if
+function myNum(num){
+	if (num<=50) {
+  return "he is passed"
+  }else{
+  return "u have failed"
+  }
+}
+console.log(myNum(1000))
+//use else if statement for two or more logical comparison...The condition in the first is given higher priority
+
+
+
+/* switch these are another kinda operators which are used in comparison so on */
+function myswitch(val){
+	var answer="";
+  switch(val) {
+  case 1:
+  answer="shaam";
+  break;
+  case 2:
+  answer="sss";
+  break;
+  }
+  return answer
+}
+console.log(myswitch(2));
+
+
+
+/* default is used to assign values tht ain't in case like else */
+function myswitch(val){
+	var answer="";
+  switch(val) {
+  case 1:
+  answer="shaam";
+  break;
+  case 2:
+  answer="sss";
+  break;
+  default:
+  answer = "stuff"
+  }
+  return answer
+}
+console.log(myswitch(33));
+
+
+
+/* for assigning multiple cases for an answer*/
+function myVal(val) {
+  var answer = "";
+  switch(val) {
+  case 1:
+  case 2:
+  answer = "low";
+  break;
+  case 3:
+  case 4:
+  answer = "high";
+  }
+  return answer;
+}
+console.log(myVal(2));
+
+
+
+//assigning boolean values
+function lessornot(a,b){
+	if (a>b) {
+  return "A is bigger";
+  }else{
+  return "B is bigger";
+  }
+}
+console.log(lessornot(10,30))
+//more simpler
+//assigning boolean values
+function lessornot(a,b){
+	return(a>b);
+}
+console.log(lessornot(10,33))
+
+
+
+/* objects like arrays where the value b4 the colon is properties and stuffs assigned is values */
+var myName = {
+	"name":"shaam",
+  "age":18,  
+}
+
+
+
+//how to access the values using the dot value and bracket value simultaneously
+var myName = {
+  "name":"shaam",
+  "age":18,
+  7:"cr"
+}
+var nameVal = testObj.name;
+var ageVal = testObj["age"];
+var ron = 7;
+var player = testObj[ron];
+myName.name="Shaam"; //to change the name and any updation
+myName[age]=18.89;
+
+
