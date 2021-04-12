@@ -3,7 +3,6 @@
 alert("Hello_world") it is done by using two forward slashes
 
 
-
 // data types
 // variables
 // variables are box tht are used to store a value let be any of 7 data types
@@ -14,7 +13,6 @@ let herName = "SSS"
  // the sad thing abt let is it can't be changed and it is only in a place where it is generated
 const pi = 3.14
 // even constant can't be changed once intiated its done
-
 
 
 // declaring and assigning variables
@@ -29,11 +27,9 @@ a = b;
 console.log(a)
 
 
-
 //camel casing 
 var shaamNatheshwar = 18;
 console.log(ShaamNatheshwar) //this is wrong coz case sensitivity.
-
 
 
 /* basic arithmetic operators in javascript */
@@ -51,7 +47,6 @@ var div = 100/10;
 console.log(div);
 
 
-
 /* incrementing a number */
 var myVar = 99;
 myVar++;
@@ -62,13 +57,11 @@ myVar--;
 console.log(myTar);
 
 
-
 /* decimal numbers
 javascript also uses decimal number */
 mySar = 0.008;
 console.log(mySar);
 // same multiplication and divison rules are applied to decimals
-
 
 
 //easier number add on
@@ -82,12 +75,10 @@ console.log(a,b,c)
 // same steps can be followed for division sub mul make sure tht we use the assign operator in the last
 
 
-
 /* strings */
 var myName = "Shaam"
 var myName2 = "Nath"
 console.log(myName)
-
 
 
 /* ignoring nested double quotes */
@@ -97,11 +88,9 @@ console.log(harry)
 /* use either single quotes or even back quotes if u feel this method is difficult */
 
 
-
 /* concatenation */
 var myName = "shaam"+" natheshwar";
 console.log(myName)
-
 
 
 /* concatenation */
@@ -110,11 +99,9 @@ myName += "my name is this";
 console.log(myName)
 
 
-
 /* finding length of string */
 var myName = "shaamNatheshwar";
 console.log(myName.length)
-
 
 
 /* index in    here the indexing is done using square brackets
@@ -133,16 +120,13 @@ var myName = "jhaam natheshwar";
 myName = "shaam natheshwar";
 
 
-
  /* arrays are used to store a data */
 var myArr = ["shaam",7]
 //they always use a square bracket which is followed by a comma
 
 
-
 //array inside another array is a nested array
 var myNr = [["shaam",18],["virat",31]];
-
 
 
 /* indexing of arrays */
@@ -159,11 +143,9 @@ myNa[0] = 99;
 console.log(myNa)
 
 
-
 /* accessing multiple array use multiple indices */
 var myArr = [[1,2,3],[4,5,6],[7,8,9]];
 console.log(myArr[2][0]);
-
 
 
 /* use push attribute to push stuffs at the end
@@ -172,12 +154,10 @@ myVar.push(["shaam","shazam"]);
 console.log(myVar)
 
 
-
 /* use pop attribute to remove stuffs at the end
  */var myVar = [1,2,3];
 myVar.pop()
 console.log(myVar)
-
 
 
 /* use shift attribute to remove first stuff*/
@@ -186,12 +166,10 @@ myVar.shift();
 console.log(myVar)
 
 
-
 /* use unshift attribute to adds to the first stuff*/
 var myVar = [1,2,3];
 myVar.unshift(["shaam"]);
 console.log(myVar)
-
 
 
 /* functions are really important like other programming language they need to be called for there proper functioning */
@@ -205,7 +183,6 @@ first()
 string and in bracket write stuffs to be invoked then open parenthesos write the stuffs u wanna execute then callem */
 
 
-
 //functions with operations
 function myFirst(a,b){
 	console.log(a-b);
@@ -214,7 +191,6 @@ myFirst(100,99)
 
 //u can use any argument inside the bracket make sure tht we call em
 another important thing to be noticed is var above a function is termed as a global also if u wanna make any function globall just dont contain it in a var
-
 
 
 //global and local variable more intuition
@@ -237,14 +213,12 @@ console.log(myNum(10))
 /* what happens without return we will get an undefined */
 
 
-
 /* assigning a variable using a function */
 var myVal = 5;
 function myNum(num){
 	return num+5
 }
 myVal = myNum(5);
-
 
 
 /* booleans helps in givng true or false in other words they act like switches */
@@ -257,7 +231,6 @@ function isit(shaam) {
 console.log(isit(true))
 
 
-
 /* These if plays an important role in comparison problems and other stuffs */
 function myNum(num){
 	if(num == 10) {
@@ -266,7 +239,6 @@ function myNum(num){
   return "oops it ain't";
 }
 console.log(myNum(22));
-
 
 
 /* things to know abt equality and strictly equality is tht == doesn't care whether its a string or not whereas strictly equal cares those stuffs  */
@@ -279,7 +251,6 @@ function myNum(num){
 console.log(myNum(10));
 
 
-
 /* same rule for strict none equaluty and non equality operator */
 function myNum(num){
 	if(num != 10) {
@@ -288,7 +259,6 @@ function myNum(num){
   return "oops it ain't";
 }
 console.log(myNum(10));
-
 
 
 /* comparing using arithmetic stuffs */
@@ -313,7 +283,6 @@ console.log(myNum(33))
 //use || for or incase of if we want
 
 
-
 //else statement is an another operator which is used in comparison like tht of if
 function myNum(num){
 	if (num<=50) {
@@ -324,7 +293,6 @@ function myNum(num){
 }
 console.log(myNum(1000))
 //use else if statement for two or more logical comparison...The condition in the first is given higher priority
-
 
 
 /* switch these are another kinda operators which are used in comparison so on */
@@ -341,7 +309,6 @@ function myswitch(val){
   return answer
 }
 console.log(myswitch(2));
-
 
 
 /* default is used to assign values tht ain't in case like else */
@@ -362,7 +329,6 @@ function myswitch(val){
 console.log(myswitch(33));
 
 
-
 /* for assigning multiple cases for an answer*/
 function myVal(val) {
   var answer = "";
@@ -378,7 +344,6 @@ function myVal(val) {
   return answer;
 }
 console.log(myVal(2));
-
 
 
 //assigning boolean values
@@ -398,13 +363,11 @@ function lessornot(a,b){
 console.log(lessornot(10,33))
 
 
-
 /* objects like arrays where the value b4 the colon is properties and stuffs assigned is values */
 var myName = {
 	"name":"shaam",
   "age":18,  
 }
-
 
 
 //how to access the values using the dot value and bracket value simultaneously
@@ -421,3 +384,213 @@ myName.name="Shaam"; //to change the name and any updation
 myName[age]=18.89;
 
 
+//creation of objects helps in easy analysis
+function myObj(val){
+	var result="";
+  var loook={
+  "shaam":"dibl",
+  "manil":"skaa",
+  }
+  result=loook[val];
+  return result;
+}
+console.log(myObj("shaam"))
+
+
+//for accessing data
+var myVal = {
+	"shaam":"tanana",
+  "sss":"ssn",
+}
+function myObj(val){
+	if (myVal.hasOwnProperty(val)){
+  return myVal[val];
+  }else{
+  return"It ain't there";
+  }
+}
+console.log(myObj("shaa"))
+
+
+var myStorage = {
+	"shaam":{
+  "dsss":{
+  "fff":"good bout",
+  }
+  }
+}
+var myAnswer = myStorage.shaam.dsss.fff;
+console.log(myAnswer)
+//no need to use square brackets
+
+
+//while loop this is conditional one runs whenever the loop is true
+var myVar = [];
+var i = 0;
+while(i<5){
+	myVar.push(i);
+  i++;
+}
+console.log(myVar)
+
+
+//For are another loops which uses;and really case sensitive
+var myVar = [];
+for (var i=0;i<5;i++) {
+	myVar.push(i)
+}
+console.log(myVar)
+
+
+//Incrementing eveen numbers
+var myVal = [];
+for (i=0;i<10;i+=2){
+	myVal.push(i)
+}
+console.log(myVal)
+// this same stuff can be used to increment decrement finding odd numbers and other stufs so on
+
+
+function multiply(arr){
+	var product = 1;
+  for (var i=0;i<arr.length;i++){
+  	for (var j=0;j<arr[i].length;j++);{
+    product *= arr[i][j];
+    }
+  }
+  return product;
+}
+var product = multiply([[1,2],[3,4]])
+console.log(product);
+
+
+//do while loops runs atleast once b4 checking the conditions
+var myVar = []
+var i = 10 ;
+do{
+	myVar.push(i);
+  i++;
+}while(i<10);
+console.log(i,myVar)
+
+
+//random function can be created using math.random
+function x(){
+ return Math.random()
+}
+console.log(x())
+
+
+//random function can be created using math.random
+function x(){
+ return Math.floor(Math.random()*20)
+}
+console.log(x())
+//modify the formulae accordingly to get numbers between a range
+
+
+//parse int function helps in converting integer into string
+function str(str){
+	return parseInt(str);
+}
+console.log("43")
+
+
+//parse int function for binary
+function str(str){
+	return parseInt(str, 2);
+}
+console.log(1011001)
+
+
+//iternary operator for avoiding if else 
+function myval(a,b){
+	return a===b ? true : false;
+}
+console.log(myval(6,7))
+
+
+//ternary operator stands for multiple statements
+function myVal(a){
+	return a > 0 ? "positive" : a<0 ? "negative" : "zero";
+}
+console.log(myVal(-9999))
+
+
+let is used than var in modern javascript coz it doesnt allow the variable to assign twice
+also let displays the values in just there block and not onto the entire program
+const is also another way of assign this very useful as once assigned they cant be reassigned...ususally coders use caps
+
+
+const s = [1,2,3];
+function ed(){
+	s[0] = 2;
+  s[1] = 4;
+  s[3] = 8;
+  
+}
+(ed())
+console.log(s)
+//usse Object.freeze() to make immutable
+
+
+//for making an anonymous function use arrow funcs
+var a = () => new date();
+
+
+//concatinating arrow funcs
+var a = (x,y) => x.concat(y);
+console.log(a([1],[2]))
+
+//Rest operator
+const sum = (function (){
+	return function sum(...args){
+  	return args.reduce((a,b) => a+b, 0)
+  }
+})();
+console.log(sum(1,2,3,4))
+
+
+//spread operator
+const a = ['jan','feb'];
+let b;
+(function(){
+	b = [...a];
+  a[0] = "shaam";
+})();
+console.log(a)
+
+
+//Another way to assign stuffs
+var a = {x:3,y:4,z:5}
+const {x:a,y:b,z:c}=a;
+
+this helps in skipping stuffs
+const[x,y,,z]=[1,2,3,4,5]
+console.log(x,y,z)
+
+
+use ``this to multi strings it ignores every stuff
+const c = (name) => ({name});
+console.log(c("shaam"))
+
+//an object can contain a function
+just remove the : and function attribute
+
+
+//getter setter and constructer
+class book{
+	constructor(a);
+  this._a = a
+}
+get writer(){
+	return this._a;
+}
+set writer(b){
+	this._a = b;
+}
+
+
+Rest continues with DOM
+
+-----Thank you-----
